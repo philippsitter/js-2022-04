@@ -9,6 +9,12 @@ function aufgabe1() {
   console.debug("Aufgabe 1 ==========================");
 
   //ToDo: füge ab hier Deinen Code ein
+  let pizza = {
+    art: "Thunfisch",
+    belag: "Thunfisch und Zwiebeln",
+    skala: 9,
+    gerneIsst: true,
+  }
 
   console.debug(pizza)
 }
@@ -26,9 +32,9 @@ function aufgabe2() {
   }
 
   //ToDo: füge ab hier in den debugs Deinen Code ein
-  console.debug()
-  console.debug()
-  console.debug()
+  console.debug(Object.keys(ghibli))
+  console.debug(Object.values(ghibli))
+  console.debug(Object.entries(ghibli))
 }
 
 /**
@@ -38,6 +44,13 @@ function aufgabe3() {
   console.debug("Aufgabe 3 ==========================");
 
   //ToDo: füge ab hier Deinen Code ein
+  let kuenstler = {
+    vorname: "Alexander",
+    nachname: "der Grosse",
+    geboren: "356 v. Chr.",
+    gestorben: "323 v. Chr.",
+    taetigkeit: "Feldherr",
+  }
 
   for (let key of Object.keys(kuenstler)) {
     console.debug(key + ": " + kuenstler[key])
