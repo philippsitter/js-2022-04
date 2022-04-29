@@ -11,6 +11,9 @@ function aufgabe1() {
   let ampel = "gruen";
 
   //ToDo: füge ab hier deinen Code ein
+  if (ampel == "gruen"){
+    console.debug("Du darfst fahren!")
+  }
 
 }
 
@@ -23,6 +26,10 @@ function aufgabe2() {
   let ampel = "rot";
 
   //ToDo: füge ab hier deinen Code ein
+  if (ampel != "gruen"){
+    console.debug("Du musst halten!")
+  }
+
 }
 
 /**
@@ -34,6 +41,12 @@ function aufgabe3() {
   let ampel = "gruen";
 
   //ToDo: füge ab hier Deinen Code ein
+  if (ampel == "gruen"){
+    console.debug("Du darfst fahren!")
+  } else
+  {
+    console.debug("Du musst halten!")
+  }
 }
 
 /**
@@ -45,6 +58,31 @@ function aufgabe4() {
   let tag = 5;
 
   //ToDo: füge ab hier Deinen Code ein
+  switch(tag) {
+    case 1:
+    console.debug("Heute ist Montag!")
+    break;
+    case 2:
+    console.debug("Heute ist Dienstag!")
+    break;
+    case 3:
+    console.debug("Heute ist Mittwoch!")
+    break;
+    case 4:
+    console.debug("Heute ist Donnerstag!")
+    break;
+    case 5:
+    console.debug("Heute ist Freitag!")
+    break;
+    case 6:
+    console.debug("Heute ist Samstag!")
+    break;
+    case 7:
+    console.debug("Heute ist Sonntag!")
+    break;
+    default:
+      console.debug("Die Woche hat genau 7 Tage!")
+  }
 }
 
 /**
