@@ -9,6 +9,10 @@ function aufgabe1() {
   console.debug("Aufgabe 1 ==========================");
 
   //ToDo: füge ab hier Deinen Code ein
+  for (let i=1; i<=5; i++){
+    console.debug("Durchlaufe Nummer: "+i)
+  }
+
 }
 
 /**
@@ -17,9 +21,10 @@ function aufgabe1() {
 function aufgabe2() {
   console.debug("Aufgabe 2 ==========================");
 
-  for(let i=1; i<6; i++) {
+  for(let i=1; i<=5; i++) {
     if(i==3) {
       //ToDo: füge ab hier Deinen Code ein
+      break
     }
     console.debug("Hallo Nummer: " + i)
   }
@@ -33,6 +38,10 @@ function aufgabe3() {
 
   for(let i=5; i>0; i--) {
     //ToDo: füge ab hier Deinen Code ein
+    if(i==3) {
+      continue
+    }
+
     console.debug("Hallo Nummer: " + i)
   }
 }
@@ -44,6 +53,12 @@ function aufgabe4() {
   console.debug("Aufgabe 4 ==========================")
 
   //ToDo: füge ab hier Deinen Code ein
+  for(let i=1; i<=3; i++){
+    for(let j=1; j<=2; j++) {
+      console.debug("Zweite Schleife j:" + j)
+    }
+      console.debug("Erste Schleife i:" + i)
+  }
 }
 
 /**
@@ -54,6 +69,13 @@ function aufgabe5() {
 
   let i=1
   //ToDo: füge ab hier Deinen Code ein
+  while(i<=5) {
+    console.debug(i)
+    i++
+    //i=i+1 gleicher prozess
+    //solange i kleiner 6 schreibe was an die tafel
+    //und zähle weiter
+  }
 }
 
 /**
@@ -63,6 +85,14 @@ function aufgabe6() {
   console.debug("Aufgabe 6 ==========================");
 
   //ToDo: füge ab hier Deinen Code ein
+  let i = 1
+  do{
+    console.debug(i)
+    i++
+  }while(i<=5)
+  //erst die Ausführung, dann die Festlegung
+  // nach jedem Durchlauf wird geprüft ob die Bedingung in dem Fall
+  // unter 6 stimmt
 }
 
 /**
