@@ -76,7 +76,7 @@ function aufgabe6() {
 
   //ToDo: füge ab hier Deinen Code ein
   function fakultaet(zahl){
-      if (zahl <=0){
+      if (zahl <=1){
         return 1
       }
         return fakultaet(zahl-1)*zahl
