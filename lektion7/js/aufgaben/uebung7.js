@@ -9,14 +9,18 @@ function aufgabe1() {
   console.debug("Aufgabe 1 ==========================")
 
   class Apfel {
-    constructor (farbe) {
+    constructor (farbe, name, alter) {
       this.farbe = farbe
+      this.name = name
+      this.alter = alter
     }
 
   }
 
   //ToDo: füge ab hier deinen Code ein
+  let rot = "rot"
  let apfel = new Apfel("rot")
+  //alternativ let apfel = new Apfel(rot)
   console.debug(apfel.farbe)
 }
 
@@ -90,8 +94,9 @@ function aufgabe5() {
 
   //ToDo: füge ab hier deinen Code ein
   class Elektroauto {
-    constructor(farbe) {
+    constructor(farbe, jahreszahl) {
       this.farbe = farbe
+      this.baujahr = jahreszahl
     }
     hupen() {
       console.debug("honk honk")
@@ -101,6 +106,20 @@ function aufgabe5() {
   console.debug(tesla.farbe)
   tesla.hupen()
 }
+// alternativ class Elektroauto {
+// constructor(farbe, jahreszahl) {
+// this.farbe = farbe
+// this.baujahr = jahreszahl
+// }
+// hupen (honk){
+//   console.debug(honk)
+// }
+// }
+//   let tesla = new Elektroauto("grau")
+//   console.debug(tesla.farbe)
+//   tesla.hupen("double honk")
+// }
+
 /**
  * Hauptfunktion, in der die Aufgaben aufgerufen werden
  */
