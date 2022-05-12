@@ -1,0 +1,85 @@
+VARIABLEN
+Datenfrgen:
+Nummer: let variablenName1 = 17
+String - Wort/Satz: let variablenName = "Das hier ist ein String"
+Boolean - Wahrheitswert: let variablenName = true
+                         let variablenName = false
+Array - Liste: let variableName = [1,2,3,4,5,6,7,"Obst","Gemüse","Milch",variablenName1....]
+
+ARRAYS
+let arrayName = [1,2,3,4,5]
+arrayName[0] = 20
+->  [20,2,3,4,5]
+Neues Element am Ende: arrayName.push("neuesElement")
+--> [20,2,3,4,5,"neuesElement"]
+Neues Element am Anfang: arrayName.unshift("neuesElement2")
+->["neuesElement2",20,2,3,4,5,"neuesElement"]
+Element löschen am Ende: arrayName.pop()
+->["neuesElement2",20,2,3,4,5]
+Element an beliebiger Position löschen: arrayName.splice(position, anzahlElemente)
+arrayName.splice(3,1)
+-->["neuesElement2",20,2,4,5]
+Position eines Elements: arrayName.indexOf(20) -> Position 1
+
+IF-Bedingungen
+wenn(variable == wert) dann
+ansonsten
+
+if(variablenName1 == 17){
+    hier steht der auszuführende Code
+}else{
+    hier steht der alternative Code
+}
+
+Operatoren
+Variable ist gleich Wert: ==
+Variable ist ungleich Wert: !=
+Variable ist größer gleich: >= Variable ist kleiner gleich: <=
+Variable ist größer als: >  Variable ist größer als: <
+
+Schleifen
+whlie-Schleife:
+whilfe(variable < wert){
+    variable++
+}
+
+for - i - Schleife
+Startwert und Maximalwert entscheiden, wie häufig die Schleife durchläuft
+
+for(let position = 0; position <= 10; position++){
+    arrayName[0]=i
+}
+
+arrayName = [1,2,3,4,5,6]
+
+aritkelListe = ["Reis","Gemüse","milch"]
+
+for-of-schleife
+
+for(let gegenstand of arikelListe){
+    console.debug(gegenstand)
+}
+
+for(let j=0; j < array.length; j++){
+    artikelListe[j]=artikelListe[j] + "beliebiger Anhang"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
