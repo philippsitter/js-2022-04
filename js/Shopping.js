@@ -1,5 +1,5 @@
 import Gruppe from "./Gruppe.js";
-import {gruppeFinden, gruppenListe} from "../lektion6/loesung/loesung6.js";
+import {gruppenListe} from "../lektion6/loesung/loesung6.js";
 
 class Shopping {
   gruppenListe
@@ -21,19 +21,28 @@ class Shopping {
     console.debug("Gruppe", suchName, "nicht gefunden")
     return null
   }
+  gruppeFinden(gruppenName) {
+    let gefundeneGruppe = gruppenListe.indexOf(gruppenName)
+    if (gefundeneGruppe > -1) {
+      return gruppenListe[gefundeneGruppe]
+    } else {
+      console.warn("Gruppe \"" + gruppenName + "\" nicht gefunden")
+      return null
+    }
+  }
 
   gruppeHinzufuegen(name) {
-    // gruppeFinden
     let vorhandeneGruppe = this.gruppeFinden(name)
     if (vorhandeneGruppe == null) {
       let neueGruppe = new Gruppe(name, this.gruppenListe.length)
       this.gruppenListe.push(neueGruppe)
-      this.informieren("[App Gruppe\"" + name + "\"angelegt]")
+      this.informieren("[App] Gruppe\"" + name + "\"hinzugefügt")
       return neueGruppe
     } else {
-      this.informieren("[App Gruppe\"" + name + "\"schon vorhanden]")
+      this.informieren("[App] Gruppe\"" + name + "\"schon vorhanden")
     }
   }
+
   gruppeUmbenennen(alterName, neuerName) {
     let vorhandeneGruppe = gruppeFinden(alterName)
     if (vorhandeneGruppe != null) {
@@ -53,6 +62,7 @@ class Shopping {
       console.warn("Gruppe \"" + gruppenName + "\" konnte NICHT entfernt werden")
     }
   }
+
   informieren(nachricht, istWarnung = false) {
     if (this.meldungenAusgeben) {
       if (istWarnung) {
