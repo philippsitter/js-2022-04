@@ -1,5 +1,5 @@
-import {Artikel} from "./Artikel.js"
-import {Shopping} from "./Shopping.js"
+import Artikel from "./Artikel.js"
+import Shopping from "./Shopping.js"
 
 class Gruppe {
   static counter = 1
@@ -14,6 +14,13 @@ class Gruppe {
     this.artikelListe = []
     this.id = Gruppe.counter++
   }
+  artikelAuflisten(gekauft){
+    for (let artikel of this.artikelListe){
+      if (artikel.gekauft == gekauft){
+        console.debug(artikel.name)
+      }
+    }
+  }
 }
 
-export {Gruppe}
+export default Gruppe

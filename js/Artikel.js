@@ -2,15 +2,15 @@ class Artikel {
   static counter = 1
   name
   position
-  gekauft = false
-  id = Artikel.counter++
+  gekauft
+  id
 
-  constructor(name, position, gekauft, id) {
+  constructor(name, position){
     this.name = name
     this.position = position
-    this.gekauft = gekauft
-    this.id = id
+    this.gekauft = false
+    this.id = Artikel.counter++
   }
 }
 
-export {Artikel}
+export default Artikel
