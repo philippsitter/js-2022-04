@@ -1,6 +1,6 @@
-import {Gruppe} from "../../js/Gruppe.js"
-import {Artikel} from "../../js/Artikel.js"
-import {Shopping} from "../../js/Shopping.js"
+import Gruppe from "../../js/Gruppe.js"
+import Artikel from "../../js/Artikel.js"
+import Shopping from "../../js/Shopping.js"
 
 
 function teste_artikelAuflisten() {
@@ -40,7 +40,7 @@ function teste_gruppeFinden() {
 function main() {
     console.debug("[Lektion 7] ============================")
     teste_artikelAuflisten()
-    //teste_gruppeFinden()
+    teste_gruppeFinden()
 
 }
 main()

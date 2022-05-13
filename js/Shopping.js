@@ -21,15 +21,6 @@ class Shopping {
     console.debug("Gruppe", suchName, "nicht gefunden")
     return null
   }
-  gruppeFinden(gruppenName) {
-    let gefundeneGruppe = gruppenListe.indexOf(gruppenName)
-    if (gefundeneGruppe > -1) {
-      return gruppenListe[gefundeneGruppe]
-    } else {
-      console.warn("Gruppe \"" + gruppenName + "\" nicht gefunden")
-      return null
-    }
-  }
 
   gruppeHinzufuegen(name) {
     let vorhandeneGruppe = this.gruppeFinden(name)
@@ -75,4 +66,5 @@ class Shopping {
   }
 }
 
+//const App = new Shopping()
 export default Shopping
