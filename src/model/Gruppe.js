@@ -1,4 +1,5 @@
 import Artikel from "./Artikel.js"
+import App from "./Shopping.js"
 
 /**
  * Klasse zum Gruppieren der Artikel
@@ -28,24 +29,27 @@ class Gruppe {
    * @returns {Artikel|null}
    */
   artikelFinden(suchName, meldungAusgeben) {
-    // TODO: füge hier Deinen Code ein
-  for ( let artikel of this.artikelListe){
-    if (artikel.name == suchName){
-      return artikel
-     }
+    for (let artikel of this.artikelListe) {
+      if (artikel.name == suchName) {
+        return artikel
+      }
     }
-  if(meldungAusgeben){
-    console.warn ("artikel nicht gefunden", suchName)
+    if (meldungAusgeben) {
+      App.informieren("[" + this.name + "] Artikel " + suchName + " nicht gefunden", true)
+    }
+    return null
   }
-  return null
-  }
+
   /**
    * Listet die Artikel in dieser Gruppe in der Konsole auf
    * @param {Boolean} gekauft - steuert die Anzeige der gekauften oder noch zu kaufenden Artikel
    */
   artikelAuflisten(gekauft) {
-    // TODO: füge hier Deinen Code ein
-
+    for (let artikel of this.artikelListe) {
+      if (artikel.gekauft == gekauft) {
+        console.debug("  " + artikel.name)
+      }
+    }
   }
 
   /**
@@ -54,32 +58,57 @@ class Gruppe {
    * @returns {Artikel} neuerArtikel - der neu erzeugte Artikel
    */
   artikelHinzufuegen(name) {
-    // TODO: doppelte Artikel abfangen!
-    let neuerArtikel = new Artikel(name, this.artikelListe.length)
-    this.artikelListe.push(neuerArtikel)
-    return neuerArtikel
+    let vorhandenerArtikel = this.artikelFinden(name, false)
+    if (!vorhandenerArtikel) {
+      let neuerArtikel = new Artikel(name, this.artikelListe.length)
+      this.artikelListe.push(neuerArtikel)
+      App.informieren("[" + this.name + "] Artikel " + name + " hinzugefügt")
+      return neuerArtikel
+    } else {
+      App.informieren("[" + this.name + "] Artikel " + name + " existiert schon!", true)
+    }
   }
 
   /**
-   *
-   * @param {String} name
+   * Entfernt einen Artikel aus der ArtikelListe
+   * @param {String} name - Index des zu entfernenden Artikels
    */
   artikelEntfernen(name) {
-    // TODO: Artikel finden, position ermitteln
-    let position = 0;
-    this.artikelListe.splice(position , 1)
+    let loeschArtikel = this.artikelFinden(name)
+    if (loeschArtikel) {
+      const index = this.artikelListe.indexOf(loeschArtikel)
+      this.artikelListe.splice(index, 1)
+      this.artikelNeuNummerieren()
+      App.informieren("[" + this.name + "] Artikel \"" + name + "\" entfernt"
+      )
+    } else {
+      App.informieren("[" + this.name + "] Artikel \"" + name + "\" konnte NICHT entfernt werden", true
+      )
+    }
   }
 
-}
-function main() {
+  /**
+   * Nummeriert alle Artikel in der Artikel-Liste neu durch
+   */
+  artikelNeuNummerieren() {
+    for (let i = 0; i < this.artikelListe.length; i++) {
+      this.artikelListe[i].index = i
+    }
+  }
 
-  let zahl = 0
-  let gruppe = new Gruppe("produktGruppe1", 0)
-  let artikel = new Artikel("test",0)
-  gruppe.artikelHinzufuegen("artikel")
-  gruppe.artikelHinzufuegen("artikel2")
-  console.debug(gruppe.artikelListe)
-  gruppe.artikelFinden("artikel")
-  gruppe.artikelFinden("xxx", true)
+
+  /**
+   * Sucht einen Artikel anhand des Namens und benennt ihn um.
+   * @param {String} alterName - Name des zu findenden Artikels
+   * @param {String} neuerName - neuer Name des Artikels
+   */
+  artikelUmbenennen(alterName, neuerName) {
+    let vorhandenerArtikel = this.artikelFinden(alterName)
+    if (vorhandenerArtikel) {
+      vorhandenerArtikel.name = neuerName
+    }
+    App.informieren("[" + this.name + "] Artikel \"" + alterName + "\" umbenannt in \"" + neuerName + "\"")
+  }
 }
-main()
+
+export default Gruppe

@@ -6,7 +6,7 @@ import Gruppe from './Gruppe.js'
  * @property {Gruppe[]} gruppenListe      - enthält die Artikelgruppen
  * @property {Gruppe}   aktiveGruppe      - enthält die aktuell ausgewählte Gruppe
  * @property {boolean}  meldungenAusgeben - steuert, ob eine Meldung ausgegeben werden soll oder nicht
-*/
+ */
 class Shopping {
   gruppenListe = []
   aktiveGruppe = null

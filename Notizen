@@ -64,6 +64,25 @@ for(let j=0; j < array.length; j++){
     artikelListe[j]=artikelListe[j] + "beliebiger Anhang"
 }
 
+//schleifen
+console.debug("hallo")
+console.debug("hallo")
+console.debug("hallo")
+console.debug("hallo")
+console.debug("hallo")
+
+// Bedingung
+let zahl = 0
+while(zahl < 5) {
+    console.debug("Hallo")
+    zahl++
+}
+
+
+
+
+
+
 
 
 
