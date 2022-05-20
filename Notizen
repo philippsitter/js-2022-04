@@ -77,6 +77,72 @@ while(zahl < 5) {
     console.debug("Hallo")
     zahl++
 }
+//Dasselbe:
+//Variabledeklarieren/Anfangswert; Bedingung wie lange; Wie schnell zählen wir hoch
+for (let i=0; i<5;i++) {
+    console.debug("Hallo")
+}
+
+for(let i=0; i <10; i++){
+    console.debug("Hallo wie gehts dir?")
+}
+
+for(let i=0; i <10; i++)
+    //1.durchlauf i=0 // 1.Schritt
+    //2.durchlauf i=0 // .Schritt
+    for(let j = 0; j < 3; j++){  ----------------screenshot 15:23 ca 20.05
+        console.debug("hallo")
+    }
+}
+
+
+for i mit arrays
+
+
+let zahl = 0
+console.debug(zahl).....
+let zahl = 1
+console.debug(zahl)...
+
+for (let i = 0; i < 10; i++) {
+//1.durchlauf i = 0
+//2. durchlauf i = 1
+    console.debug(i)
+}
+
+
+let kursTeilnehmer = ["Fradiano, "Nabil", "Philipp"]
+///console.debug(kursTeilnehmer[0]
+ ----> fradiano
+
+ for (let i = 0; i < 10; i++) {
+ 1.durchlauf i = 0
+ 2.....
+    console.debug(kursTeilnehmer[i])
+ }
+
+ for of schleifen
+
+ let kursTeilnehmer = ["Fradiano, "Nabil", "Philipp", "Benjamin"]
+
+//variablen deklaration of array
+for ( let i of kursTeilnehmer) {
+    //1,durchlauf i = kursteilnehmer[0]
+    //2,durchlauf i = kursteilnehmer[1]
+    //3,durchlauf i = kursteilnehmer[2]
+    //4,durchlauf i = kursteilnehmer[3]
+    console,debug(i)
+}
+
+for ( let teilnehmer of kursTeilnehmer) {
+    //1,durchlauf teilnehmer = kursteilnehmer[0]
+    //2,durchlauf teilnehmer = kursteilnehmer[1]
+    //3,durchlauf teilnehmer = kursteilnehmer[2]
+    //4,durchlauf teilnehmer = kursteilnehmer[3]
+    console.debug(teilnehmer)
+}
+
+
 
 
 
