@@ -46,6 +46,7 @@ class App extends React.Component {
     // 'aktion' abhängig von 'artikel.gekauft' auf "erledigt" oder "reaktiviert" setzen
     // App.informieren mit 'aktion'
     // 'state' aktualisieren
+
   }
 
   artikelHinzufuegen() {
