@@ -108,6 +108,7 @@ class App extends React.Component {
                    onKeyPress={e => (e.key == 'Enter') ? this.artikelHinzufuegen() : ''}/>
             <span className="mdc-line-ripple"></span>
             <i className="material-icons mdc-text-field__icon mdc-text-field__icon--trailing"
+               tabIndex="0" role="button"
                onClick={() => this.artikelHinzufuegen()}>add_circle</i>
           </label>
 
