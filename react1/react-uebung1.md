@@ -44,7 +44,7 @@ Soweit so gut, aber wir wollen uns jetzt "Hallo Welt" ausgeben lassen.
 <br> <br>
 
 
-1. In der Ordnerstruktur findest du den src Ordner, öffne innerhalb dieses Ordners die `ShoppingList.js`
+1. In der Ordnerstruktur findest du den src Ordner, öffne innerhalb dieses Ordners die `App.js`
 Diese sollte so aussehen:
 >![](img/App.png)
 2. Ersetze nun den gesamten Inhalt innerhalb des ` <div className="ShoppingList"> ` mit einem `<h1>Hello World!</h1> `
@@ -85,7 +85,7 @@ Durch dasIn deinem Browser unter `localhost:3000`sollte nun das ausgegeben werde
 <details>
 <summary>Aufgabe 4</summary>
 Du hast die Aufgabe nun erfolgreich abgeschlossen. 
-Nutze nun die restliche Zeit um dich mit React vertraut zu machen, ändere zum Beispiel nochmal die ShoppingList.css oder füge deine ShoppingList.js noch etwas hinzu. 
+Nutze nun die restliche Zeit um dich mit React vertraut zu machen, ändere zum Beispiel nochmal die ShoppingList.css oder füge deine App.js noch etwas hinzu. 
 
 Sei kreativ und vor allem habe Freude dabei! 
 
