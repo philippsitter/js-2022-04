@@ -66,7 +66,7 @@ class Shopping {
             let neueGruppe = name
             this.gruppenListe.push(neueGruppe)
             this.aktiveGruppe = neueGruppe
-            console.debug("[App] Gruppe \"" + neueGruppe + "\" hinzugefügt")
+            console.debug("[ShoppingList] Gruppe \"" + neueGruppe + "\" hinzugefügt")
             return neueGruppe
         } else {
             console.warn("Gruppe \"" + name + "\" existiert schon!")

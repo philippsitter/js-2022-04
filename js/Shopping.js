@@ -27,10 +27,10 @@ class Shopping {
     if (vorhandeneGruppe == null) {
       let neueGruppe = new Gruppe(name, this.gruppenListe.length)
       this.gruppenListe.push(neueGruppe)
-      this.informieren("[App] Gruppe\"" + name + "\"hinzugefügt")
+      this.informieren("[ShoppingList] Gruppe\"" + name + "\"hinzugefügt")
       return neueGruppe
     } else {
-      this.informieren("[App] Gruppe\"" + name + "\"schon vorhanden")
+      this.informieren("[ShoppingList] Gruppe\"" + name + "\"schon vorhanden")
     }
   }
 
@@ -48,7 +48,7 @@ class Shopping {
     if (entfernGruppe != null) {
       let index = gruppenListe.indexOf(entfernGruppe)
       this.gruppenListe.splice(index, 1)
-      console.debug("[App] Gruppe \"" + gruppenName + "\" entfernt")
+      console.debug("[ShoppingList] Gruppe \"" + gruppenName + "\" entfernt")
     } else {
       console.warn("Gruppe \"" + gruppenName + "\" konnte NICHT entfernt werden")
     }
@@ -66,5 +66,5 @@ class Shopping {
   }
 }
 
-//const App = new Shopping()
+//const ShoppingList = new Shopping()
 export default Shopping

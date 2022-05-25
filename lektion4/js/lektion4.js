@@ -37,10 +37,10 @@ function gruppe_Hinzufuegen() {
   let gleicheGruppen = []
   let neueGruppe = "Getränke"
   if (gleicheGruppen.length == 0) {
-    console.debug("[App] Gruppe " + neueGruppe + " hinzugefügt.")
+    console.debug("[ShoppingList] Gruppe " + neueGruppe + " hinzugefügt.")
   }
   else {
-    console.debug("[App] Gruppe " + neueGruppe + " existiert schon!")
+    console.debug("[ShoppingList] Gruppe " + neueGruppe + " existiert schon!")
   }
 }
 

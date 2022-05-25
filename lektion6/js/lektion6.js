@@ -28,7 +28,7 @@ function gruppeHinzufuegen(name){
     let neueGruppe = name
     gruppenListe.push(neueGruppe)
     aktiveGruppe = neueGruppe
-    console.debug("[App] Gruppe \"" + neueGruppe + "\" hinzugefügt")
+    console.debug("[ShoppingList] Gruppe \"" + neueGruppe + "\" hinzugefügt")
     return neueGruppe
   }
   else {

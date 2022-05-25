@@ -10,13 +10,13 @@
 
 ####Beschreibung:
 
-- In dieser Lektion arbeiten wir an weitere Layouts für den Prototypen unserer Einkaufslisten-App.
+- In dieser Lektion arbeiten wir an weitere Layouts für den Prototypen unserer Einkaufslisten-ShoppingList.
 
 
 ####Hinweise zur Bearbeitung:
 
 - Achte auf einen sauberen Quellcode, insbesondere Einrückungen sind wichtig.
-- Die App kann nach deiner eigenen Vorstellung angepasst werden. Sei kreativ!
+- Die ShoppingList kann nach deiner eigenen Vorstellung angepasst werden. Sei kreativ!
 - Die Antwort zu jedem Problem lässt sich durch die richtige Suche im Web finden.
 - Wenn du Hilfe brauchst, frage gerne Google, andere Teilnehmer oder die Tutoren. Es gibt keine dumme Fragen.
 

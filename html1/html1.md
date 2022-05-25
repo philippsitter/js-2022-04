@@ -10,12 +10,12 @@
 #### Beschreibung:
 
 - Dies ist deine erste Coding-Challenge!
-- In dieser Lektion erstellen wir einen Prototyp der Einkaufslisten-App 🛒.
+- In dieser Lektion erstellen wir einen Prototyp der Einkaufslisten-ShoppingList 🛒.
 
 #### Hinweise zur Bearbeitung:
 
 - Achte auf einen sauberen Quellcode, insbesondere Einrückungen sind wichtig.
-- Die App kann nach deiner eigenen Vorstellung angepasst werden. Sei kreativ!
+- Die ShoppingList kann nach deiner eigenen Vorstellung angepasst werden. Sei kreativ!
 - Die Antwort zu jedem Problem lässt sich durch die richtige Suche im Web finden.
 - Wenn du Hilfe brauchst, frage gerne Google, andere Teilnehmer oder die Tutoren. Es gibt keine dummen Fragen!
 
@@ -27,7 +27,7 @@
 
 In der HTML-Datei, `html-lektion1.html` findest du bereits ein erstes HTML Konstrukt. Dieses enthält die 
 äußeren `<html>`-Tags mit einem `<head>`-Tag.
-1. Erstelle innerhalb des `<head>`-Tags die `<title>`-Tags. Dieser Titel kann zum Beispiel Einkaufslisten-App heißen. 
+1. Erstelle innerhalb des `<head>`-Tags die `<title>`-Tags. Dieser Titel kann zum Beispiel Einkaufslisten-ShoppingList heißen. 
 2. Nun soll in den ersten Abschnitt der Seite folgendes eingefügt werden:
 - Eine Überschrift `Einkaufsliste` in Schriftgröße `h1`,
 - Ein frei stehender Text `Artikel hinzufügen +` und
@@ -39,7 +39,7 @@ In der HTML-Datei, `html-lektion1.html` findest du bereits ein erstes HTML Konst
 <details>
 <summary>Zwischenergebnis</summary>
 
-Durch das Erstellen all der neuen HTML-Komponenten, sollte deine App nun ungefähr so aussehen:
+Durch das Erstellen all der neuen HTML-Komponenten, sollte deine ShoppingList nun ungefähr so aussehen:
 <p>
   <img src="img/html1-aufgabe1.png" width="300" height="150" />
 </p>
@@ -69,7 +69,7 @@ Als Nächstes fügen wir die folgenden Abschnitte hinzu:
 <details>
 <summary>Zwischenergebnis</summary>
 
-Durch das Erstellen all der neuen HTML-Komponenten, sollte deine App nun ungefähr so aussehen:
+Durch das Erstellen all der neuen HTML-Komponenten, sollte deine ShoppingList nun ungefähr so aussehen:
 <p>
   <img src="img/html1-aufgabe2.png" width="250" height="400" />
 </p>
@@ -80,7 +80,7 @@ Durch das Erstellen all der neuen HTML-Komponenten, sollte deine App nun ungefä
 <details>
 <summary>Aufgabe 3</summary>
 
-In dieser Aufgabe bringen wir etwas mehr Form in deine HTML-App
+In dieser Aufgabe bringen wir etwas mehr Form in deine HTML-ShoppingList
 1. Unterteile die Webseite mit den entsprechenden Tags in Header, Main und Footer.
 - Header: `Einkaufsliste` bis `Artikel hinzufügen +`
 - Main: `Einkaufen` bis `Tofu`
@@ -97,7 +97,7 @@ Dies geschieht mithilfe von `<section>`-Tags.
 <details>
 <summary>Endergebnis</summary>
 
-Die App hat sich jetzt zwar kaum verändert, aber es gehört nun mal zu den best-practices, die App in 
+Die ShoppingList hat sich jetzt zwar kaum verändert, aber es gehört nun mal zu den best-practices, die ShoppingList in 
 verschiedene Bereiche einzuteilen. <br><br>
 <p>
   <img src="img/html1-endergebnis.png" width="250" height="400" />

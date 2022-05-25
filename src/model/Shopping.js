@@ -1,7 +1,7 @@
 import Gruppe from './Gruppe.js'
 
 /**
- * Diese Klasse steuert das Modell der App
+ * Diese Klasse steuert das Modell der ShoppingList
  *
  * @property {Gruppe[]} gruppenListe      - enthält die Artikelgruppen
  * @property {Gruppe}   aktiveGruppe      - enthält die aktuell ausgewählte Gruppe
@@ -26,7 +26,7 @@ class Shopping {
     }
     // nichts gefunden, meldung ausgeben
     if (meldungAusgeben) {
-      this.informieren("[App] Gruppe \"" + name + "\" nicht gefunden", true)
+      this.informieren("[ShoppingList] Gruppe \"" + name + "\" nicht gefunden", true)
     }
     return null
   }
@@ -43,10 +43,10 @@ class Shopping {
       let neueGruppe = new Gruppe(name, this.gruppenListe.length)
       this.gruppenListe.push(neueGruppe)
       this.aktiveGruppe = neueGruppe
-      this.informieren("[App] Gruppe \"" + name + "\" hinzugefügt")
+      this.informieren("[ShoppingList] Gruppe \"" + name + "\" hinzugefügt")
       return neueGruppe
     } else {
-      this.informieren("[App] Gruppe \"" + name + "\" existiert schon!", true)
+      this.informieren("[ShoppingList] Gruppe \"" + name + "\" existiert schon!", true)
     }
   }
 
@@ -63,10 +63,10 @@ class Shopping {
       // mit splice aus der gruppenListe löschen
       this.gruppenListe.splice(index, 1)
       // informieren über erfolg
-      this.informieren("[App] Gruppe \"" + name + "\" entfernt"
+      this.informieren("[ShoppingList] Gruppe \"" + name + "\" entfernt"
       )
     } else {
-      this.informieren("[App] Gruppe \"" + name + "\" konnte NICHT entfernt werden!", true)
+      this.informieren("[ShoppingList] Gruppe \"" + name + "\" konnte NICHT entfernt werden!", true)
     }
     // ansonsten warnung ausgeben
   }
@@ -83,7 +83,7 @@ class Shopping {
     if (suchGruppe) {
       suchGruppe.name = neuerName
       // erfolgsmedung ausgeben
-      this.informieren("[App] Gruppe \"" + alterName + "\" umbenannt in \"" + neuerName + "\"")
+      this.informieren("[ShoppingList] Gruppe \"" + alterName + "\" umbenannt in \"" + neuerName + "\"")
     }
   }
 

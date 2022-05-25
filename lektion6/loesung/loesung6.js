@@ -40,7 +40,7 @@ function gruppeHinzufuegen(name) {
         let neueGruppe = name
         gruppenListe.push(neueGruppe)
         aktiveGruppe = neueGruppe
-        console.debug("[App] Gruppe \"" + neueGruppe + "\" hinzugefügt")
+        console.debug("[ShoppingList] Gruppe \"" + neueGruppe + "\" hinzugefügt")
         return neueGruppe
     } else {
         console.warn("Gruppe \"" + name + "\" existiert schon!")
@@ -73,7 +73,7 @@ function gruppeEntfernen(gruppenName) {
     if (entfernGruppe != null) {
         let index = gruppenListe.indexOf(entfernGruppe)
         gruppenListe.splice(index, 1)
-        console.debug("[App] Gruppe \"" + gruppenName + "\" entfernt")
+        console.debug("[ShoppingList] Gruppe \"" + gruppenName + "\" entfernt")
     } else {
         console.warn("Gruppe \"" + gruppenName + "\" konnte NICHT entfernt werden")
     }

@@ -10,7 +10,7 @@
 
 #### Beschreibung:
 
-- In dieser Lektion werden wir weitere Funktionen der Einkaufslisten-App programmieren 🛒.
+- In dieser Lektion werden wir weitere Funktionen der Einkaufslisten-ShoppingList programmieren 🛒.
 
 
 #### Hinweise zur Bearbeitung:
@@ -19,7 +19,7 @@
 - Das Testen der Aufgaben funktioniert über die Datei `test6.js` in `"lektion6/test/test6.js"`. Diese kann bei Bedarf um
 weitere Tests ergänzt werden.
 - Achte auf einen sauberen Quellcode, insbesondere Einrückungen sind wichtig!
-- Die App kann nach deiner eigenen Vorstellung angepasst werden. Sei kreativ!
+- Die ShoppingList kann nach deiner eigenen Vorstellung angepasst werden. Sei kreativ!
 - Wenn du Hilfe brauchst, frage gerne Google, andere Teilnehmer oder die Tutoren.
 
 ---

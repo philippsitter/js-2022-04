@@ -10,7 +10,7 @@
 
 ####Beschreibung:
 
-- In dieser Lektion arbeiten wir weiter an einem Prototypen der Einkaufslisten-App.
+- In dieser Lektion arbeiten wir weiter an einem Prototypen der Einkaufslisten-ShoppingList.
 - Wir werden die HTML-Datei aus Lektion 1 weiter bearbeiten und aus statischem Text Listen, Eingabefelder und Buttons 
 kreieren.
 
@@ -18,7 +18,7 @@ kreieren.
 ####Hinweise zur Bearbeitung:
 
 - Achte auf einen sauberen Quellcode, insbesondere Einrückungen sind wichtig.
-- Die App kann nach deiner eigenen Vorstellung angepasst werden. Sei kreativ!
+- Die ShoppingList kann nach deiner eigenen Vorstellung angepasst werden. Sei kreativ!
 - Die Antwort zu jedem Problem lässt sich durch die richtige Suche im Web finden.
 - Wenn du Hilfe brauchst, frage gerne Google, andere Teilnehmer oder die Tutoren. Es gibt keine dumme Fragen.
 
@@ -176,7 +176,7 @@ Die letzte html-Aufgabe ändert nun noch das Design im `<main>`- und `<footer`-B
 <details>
 <summary>Endergebnis</summary>
 
-Die App hat sich jetzt zwar kaum verändert, aber es gehört nun mal zu den best-practices, die App in
+Die ShoppingList hat sich jetzt zwar kaum verändert, aber es gehört nun mal zu den best-practices, die ShoppingList in
 verschiedene Bereiche einzuteilen. <br><br>
 <p>
   <img src="img/html2-endergebnis.png" width="250" height="400" />

@@ -1,5 +1,5 @@
 # Einkaufsliste HTML- und JavaScript-Code
-Dieses Repository enthält den HTML- und JavaScript-Code für die Einkaufsliste, welche im Modul "Grundlagen der Programmierung" des Kurses "Mobile App Development" entwickelt wird.  
+Dieses Repository enthält den HTML- und JavaScript-Code für die Einkaufsliste, welche im Modul "Grundlagen der Programmierung" des Kurses "Mobile ShoppingList Development" entwickelt wird.  
 ![JavaScript Ergebnis](img/Einkaufsliste.png)
 
 Die HTML-Entwicklungsschritte sind in den Dateien "html1.html" und "html2.html" enthalten.

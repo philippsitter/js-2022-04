@@ -10,7 +10,7 @@
 
 #### Beschreibung:
 
-- Dies ist die erste Lektion, in der wir an der Einkaufslisten-App arbeiten werden 🛒.
+- Dies ist die erste Lektion, in der wir an der Einkaufslisten-ShoppingList arbeiten werden 🛒.
 
 
 #### Hinweise zur Bearbeitung:
@@ -18,7 +18,7 @@
 - Die Datei `lektion4.js`soll für diese Lektion bearbeitet werden
 - Das Testen der Aufgaben funktioniert über die Datei `test4.js` in "lektion4/test/test4.js"
 - Achte auf einen sauberen Quellcode, insbesondere Einrückungen sind wichtig!
-- Die App kann nach deiner eigenen Vorstellung angepasst werden. Sei kreativ!
+- Die ShoppingList kann nach deiner eigenen Vorstellung angepasst werden. Sei kreativ!
 - Die Antwort zu jedem Problem lässt sich durch die richtige Suche im Web finden.
 - Wenn du Hilfe brauchst, frage gerne Google, andere Teilnehmer oder die Tutoren.
 
@@ -88,9 +88,9 @@ Ansonsten, soll eine Warnung ausgegeben werden.
 1. Erstelle ein leeres Array namens `gleicheGruppen`
 2. Schreibe eine Variable `neueGruppe` und fülle sie mit dem Wert Getränke
 3. Wenn `gleicheGruppen` leer ist, dann gib Folgendes auf der Konsole aus:
-   [App] Gruppe "`neueGruppe`" hinzugefügt
+   [ShoppingList] Gruppe "`neueGruppe`" hinzugefügt
 4. Ansonsten gib folgende Warnung auf der Konsole aus: 
-[App] Gruppe "`neueGruppe`" existiert schon!
+[ShoppingList] Gruppe "`neueGruppe`" existiert schon!
 
 </details>
 

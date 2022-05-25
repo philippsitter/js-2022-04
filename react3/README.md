@@ -9,7 +9,7 @@
 
 
 #### Beschreibung:
-- In dieser Übung bearbeiten wir eine React App um den `state` von Komponenten zu ändern.
+- In dieser Übung bearbeiten wir eine React ShoppingList um den `state` von Komponenten zu ändern.
 
 #### Hinweise zur Bearbeitung:
 

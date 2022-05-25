@@ -8,7 +8,7 @@
 </p>
 
 #### Beschreibung:
-- In dieser Lektion erstellen wir die Klassen, die wir für die Einkaufslisten-App benötigen!
+- In dieser Lektion erstellen wir die Klassen, die wir für die Einkaufslisten-ShoppingList benötigen!
 
 #### Hinweise zur Bearbeitung:
 
@@ -16,7 +16,7 @@
 - Das Testen der Aufgaben funktioniert über die Datei `test7.js` in `"lektion7/test/test7.js"`. Diese kann bei Bedarf um
   weitere Tests ergänzt werden.
 - Achte auf einen sauberen Quellcode, insbesondere Einrückungen sind wichtig!
-- Die App kann nach deiner eigenen Vorstellung angepasst werden. Sei kreativ!
+- Die ShoppingList kann nach deiner eigenen Vorstellung angepasst werden. Sei kreativ!
 - Wenn du Hilfe brauchst, frage gerne Google, andere Teilnehmer oder die Tutoren.
 
 ---

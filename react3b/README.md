@@ -14,7 +14,7 @@ Fahrenheit und Celsius umrechnet.
 
 Dazu benutzen wir nur einen einzigen State anstatt zwei seperaten States für die Speicherung der Temperatur.
 
-Dadurch kann die App parallel den Inhalt des anderen Input-Felds verändern, während wir nur eines der beiden
+Dadurch kann die ShoppingList parallel den Inhalt des anderen Input-Felds verändern, während wir nur eines der beiden
 Felder bearbeiten.
 #### Hinweise zur Bearbeitung:
 
@@ -34,7 +34,7 @@ an die Struktur eines vernünftigen React-Projekts zu gewöhnen.
 
 2. Um das Projekt zu installieren, gib dann den folgenden Befehl ein: `npm install`
 
-3. Um die React App nun zu starten, gib den Befehl ein: `npm start`
+3. Um die React ShoppingList nun zu starten, gib den Befehl ein: `npm start`
 
 </details>
 
@@ -43,7 +43,7 @@ an die Struktur eines vernünftigen React-Projekts zu gewöhnen.
 <details>
 <summary>Aufgabe 2</summary>
 
-Wir beginnen unsere App damit, in der Komponente `TemperatureInput.js` die beiden Props
+Wir beginnen unsere ShoppingList damit, in der Komponente `TemperatureInput.js` die beiden Props
 `scale` und `temperature` zu benutzen.
 
 Gehe dazu in die ``render()`` Methode.
@@ -70,7 +70,7 @@ ___
 <details>
 <summary>Zwischenergebnis</summary>
 
-Unsere App sollte nun so weit sein, dass du in der Klasse ```Calculator.js```
+Unsere ShoppingList sollte nun so weit sein, dass du in der Klasse ```Calculator.js```
 im constructor den Startwert des States (Zeile 9) verändern kannst,
 wodurch sich auch die Input-Felder im Browser verändern sollten.
 
@@ -120,7 +120,7 @@ ___
 <details>
 <summary>Aufgabe 5</summary>
 
-Damit unsere App auch von Celsius in Fahrenheit umrechnet, müssen wir mithilfe einer
+Damit unsere ShoppingList auch von Celsius in Fahrenheit umrechnet, müssen wir mithilfe einer
 state-Abfrage überprüfen, in welcher Einheit unsere Temperatur gerade abgespeichert ist.
 
 Hat das ```scale```-Attribut aus dem State der Calculator-Klasse den Wert ``'c'``,
@@ -140,6 +140,6 @@ Vergleich, ob die ```scale``` den Wert `'c'` hat.
 
 ## Endergebnis
 
-Die fertige App sollte nun, während du eines der beiden Felder veränderst, parallel dazu
+Die fertige ShoppingList sollte nun, während du eines der beiden Felder veränderst, parallel dazu
 den Wert in der anderen Skala berechnen und in das andere Feld schreiben.
 
