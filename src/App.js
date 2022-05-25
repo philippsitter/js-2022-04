@@ -42,15 +42,25 @@ class App extends React.Component {
 
   artikelChecken = (artikel) => {
     // ToDo: implementiere diese Methode
+    artikel.gekauft = !artikel.gekauft
     // artikel.gekauft 'umpolen'
+    const aktion = artikel.gekauft ? "erledigt" : "reaktiviert"
     // 'aktion' abhängig von 'artikel.gekauft' auf "erledigt" oder "reaktiviert" setzen
+    Modell.informieren("[App] Artikel" + artikel.name + aktion)
     // App.informieren mit 'aktion'
+    this.setState(this.state)
     // 'state' aktualisieren
-
   }
 
   artikelHinzufuegen() {
     // ToDo: implementiere diese Methode
+    let eingabe = document.getElementById("artikelEingabe")
+    if(eingabe.value.length > 0) {
+      Modell.aktiveGruppe.artikelHinzufuegen(eingabe.value)
+      this.setState(this.state)
+    }
+    eingabe.value = ""
+    eingabe.focus()
   }
 
   setAktiveGruppe(gruppe) {
