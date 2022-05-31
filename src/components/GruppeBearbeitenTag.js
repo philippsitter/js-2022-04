@@ -50,5 +50,6 @@ class GruppeBearbeitenTag extends React.Component {
     )
   }
 }
+//
 
 export default GruppeBearbeitenTag
