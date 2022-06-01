@@ -69,8 +69,13 @@ function Gruesse2(props) {
 
   const isLoggedIn = props.isLoggedIn;
   //ToDo: Schreibe hier deinen Code!
-
-}
+  if (isLoggedIn){
+    return <NutzerGruss2/>
+  }
+  else {
+    return <GastGruss2/>
+  }
+ }
 
 
 
@@ -99,11 +104,13 @@ export default LoginControl
  */
 export function Mailbox(props) {
   const ungeleseneNachrichten = props.ungeleseneNachrichten;
+  // const ungeleseneNachrichten = []  leer zeigt nichts an
   return (
       <div>
 
         <h1>Willkommen zu deiner Mailbox!</h1>
         {//ToDo: Hier die Bedingung und den Operator einfügen
+          ungeleseneNachrichten.length > 0 &&
             <h2>
               Du hast {ungeleseneNachrichten.length} ungelesene Nachrichten.
             </h2>
@@ -129,9 +136,18 @@ export class NutzerGruessung extends React.Component {
   }
 
   //ToDo: Schreibe hier deinen Code statt des Rückgabewerts null!
-    render(){
-      return null
-    }
+    render() {
+      // let antwort = ""
+      // if (this.state.isLoggedIn) {
+      //   antwort = "Willkommen zurück!"
+      // } else {
+      //   antwort = "Bitte registrieren Sie sich."
+      // }
+      // return antwort
+      // if alternativ dargestellt
+
+     return (this.state.isLoggedIn)? "Willkommen zurück!": "Bitte registrieren Sie sich."
+}
 }
 
 
