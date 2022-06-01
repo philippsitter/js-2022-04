@@ -1,9 +1,13 @@
 import React from 'react'
+//import Modell from "../model/shopping"
 import ArtikelTag from './ArtikelTag'
 
 class GruppenTag extends React.Component {
   constructor(props) {
     super(props)
+    this.state = {
+      offen: false
+    }
   }
 
   artikelEntfernen(name) {
