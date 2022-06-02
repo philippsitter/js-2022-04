@@ -142,7 +142,14 @@ for ( let teilnehmer of kursTeilnehmer) {
     console.debug(teilnehmer)
 }
 
+Klassen:
 
+Zum Verständnis:
+Klassen sind Sammlungen von Attributen(properties) und Methoden.
+In Klassen werden Funktionen zu Methoden benannt.
+In der Deklaration von Methoden wird das Key-word "function" weggelassen.
+Parametrisierung : Übergeben von Parametern
+Die Methode Constructor wird immer bei einem Klassenaufruf ausgeführt.
 
 
 

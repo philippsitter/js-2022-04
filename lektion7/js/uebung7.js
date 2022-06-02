@@ -18,8 +18,9 @@ function aufgabe1() {
   }
 
   //ToDo: füge ab hier deinen Code ein
-  let rot = "rot"
- let apfel = new Apfel("rot")
+  //alternativ let rot = "rot"
+  // apfel = Instanz, Apfel = Klasse
+ let apfel = new Apfel("rot","pink lady",2)
   //alternativ let apfel = new Apfel(rot)
   console.debug(apfel.farbe)
 }
@@ -35,12 +36,15 @@ function aufgabe2() {
       this.farbe = farbe
     }
     //ToDo: füge ab hier deinen Code ein
-    hupen (honk){
+    //deklaration der methode hupen
+    hupen(honk){
       console.debug(honk)
     }
   }
+  //
   let bmw = new Auto("rot")
-  bmw.hupen("honk honk")
+  //aufruf der methode hupen der instanz bmw
+  bmw.hupen("honk")
 }
 
 /**

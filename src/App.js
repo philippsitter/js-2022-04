@@ -18,6 +18,10 @@ class App extends React.Component {
     }
   }
 
+  /**
+   * Deklaration von Methode initialisieren
+   */
+
   initialisieren() {
     let fantasy = Modell.gruppeHinzufuegen("Fantasy")
     let film1 = fantasy.artikelHinzufuegen("Der Dunkle Kristall")
@@ -32,6 +36,7 @@ class App extends React.Component {
     dokus.artikelHinzufuegen("Endgame - Blaupause für die Globale Versklavung")
     dokus.artikelHinzufuegen("Die Wüste lebt")
   }
+
 
   einkaufenAufZuKlappen() {
     let neuerZustand = !this.state.einkaufenAufgeklappt
