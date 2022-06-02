@@ -8,7 +8,6 @@ import SortierDialog from "./components/SortierDialog";
 class App extends React.Component {
   constructor(props) {
     super(props)
-    this.initialisieren()
     this.state = {
       aktiveGruppe: null,
       showGruppenDialog: false,
@@ -18,9 +17,12 @@ class App extends React.Component {
     }
   }
 
-  /**
-   * Deklaration von Methode initialisieren
-   */
+  componentDidMount() {
+    if (!Modell.laden()) {
+      this.initialisieren()
+    }
+    this.setState(this.state)
+  }
 
   initialisieren() {
     let fantasy = Modell.gruppeHinzufuegen("Fantasy")
@@ -37,14 +39,16 @@ class App extends React.Component {
     dokus.artikelHinzufuegen("Die Wüste lebt")
   }
 
-
   einkaufenAufZuKlappen() {
     let neuerZustand = !this.state.einkaufenAufgeklappt
-    this.setState({einkaufenAufgeklappt: neuerZustand})
+    const aufklappZustand = {einkaufenAufgeklappt: neuerZustand}
+    this.setState(aufklappZustand)
   }
 
   erledigtAufZuKlappen() {
-    this.setState({erledigtAufgeklappt: !this.state.erledigtAufgeklappt})
+    let neuerZustand = !this.state.erledigtAufgeklappt
+    const aufklappZustand = {erledigtAufgeklappt: neuerZustand}
+    this.setState(aufklappZustand)
   }
 
   artikelChecken = (artikel) => {
@@ -55,7 +59,6 @@ class App extends React.Component {
   }
 
   artikelHinzufuegen() {
-    // ToDo: implementiere diese Methode
     const eingabe = document.getElementById("artikelEingabe")
     const artikelName = eingabe.value.trim()
     if (artikelName.length > 0) {
@@ -92,7 +95,6 @@ class App extends React.Component {
           checkHandler={this.artikelChecken}/>)
       }
     }
-
 
     let schonGekauft = []
     if (this.state.erledigtAufgeklappt) {
