@@ -15,6 +15,7 @@ class App extends React.Component {
       einkaufenAufgeklappt: true,
       erledigtAufgeklappt: false
     }
+    //this.initialisieren()
   }
 
   componentDidMount() {
